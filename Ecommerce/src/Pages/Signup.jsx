@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './CSS/LoginSignup.css'
-const LoginSignup = () => {
+
+const Signup = () => {
   return (
     <div className='loginsignup'>
       <div className='loginsignup-container'>
@@ -12,15 +14,15 @@ const LoginSignup = () => {
         </div>
         <button>Continue</button>
         <p className='loginsignup-login'>Already have an account?
-          <span>Login here</span>
+          <Link to='/login'><span>Login here</span></Link>
         </p>
         <div className='loginsignup-agree'>
           <input type="checkbox" name='' id='' />
-          <p>By continuing, i agree to the term of use & policy.</p>
+          <p>By continuing, I agree to the terms of use & privacy policy.</p>
         </div>
       </div>
     </div>
   )
 }
 
-export default LoginSignup
+export default Signup;

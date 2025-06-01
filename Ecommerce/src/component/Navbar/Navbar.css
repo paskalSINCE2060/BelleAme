@@ -357,3 +357,46 @@
         padding-top: 70px;
     }
 }
+
+/* Add these styles to your existing Navbar.css file */
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.signup-btn {
+    padding: 8px 16px;
+    background: #ff4141;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background: #e03636;
+}
+
+.login-btn span,
+.signup-btn span {
+    font-size: 14px;
+}
+
+/* Responsive styles for auth buttons */
+@media (max-width: 768px) {
+    .auth-buttons {
+        gap: 10px;
+    }
+    
+    .login-btn span,
+    .signup-btn span {
+        font-size: 12px;
+    }
+    
+    .signup-btn {
+        padding: 6px 12px;
+    }
+}
