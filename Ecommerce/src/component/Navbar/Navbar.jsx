@@ -72,9 +72,14 @@ const Navbar = () => {
             </nav>
             
             <div className='nav-actions'>
-                <Link to='/login' className='login-btn'>
-                    <span>Login</span>
-                </Link>  
+                <div className='auth-buttons'>
+                    <Link to='/login' className='login-btn'>
+                        <span>Login</span>
+                    </Link>
+                    <Link to='/signup' className='signup-btn'>
+                        <span>Sign Up</span>
+                    </Link>
+                </div>
                 <Link to='/cart' className='cart-container'>
                     <img src={cart_icon} alt='Shopping cart' className='cart-icon'/>
                     {getTotalCartItems() > 0 && (
